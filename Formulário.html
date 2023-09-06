@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+     <head> 
+         <title>--Procure o livro--</title> <meta charset="utf-8" /> 
+         <!-- <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+          <script src="JavaScript1.js"></script>-->
+          <style>
+              body { padding: 0;
+               margin: 0; } 
+               
+              form { font-family: Verdana,Tahoma,sans-serif;
+               font-size: 15px; 
+               background-color: pink;
+                max-width: 500px; }
+                 h1 { margin-bottom: 20px; margin-left: 20px; 
+                 color: white; 
+                 text-shadow: 5px 5px 5px black;
+                 
+                
+                textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+ 
+form label {
+    margin-left: 20px;
+    color: blue;
+    font-weight: bold;
+}
+              
+              </style>
+              <script>
+              function Pesquisar() {
+
+    var nome = document.getElementById("Livroid");
+
+    if (Livro.value != "") {
+        alert('Obrigado o' + livro.value + ' a pesquisa foi encaminhada com sucesso');
+    }
+    </script>
+           </head>
+            <body> 
+                <form name="meu_form">
+                     <h1>Procure o livro</h1>
+                      <input type="text" id="tituloid" required="required" name="Título" /> 
+                      <label for="nome">Título</label> 
+                      <input type="autor" id="autorid"  name="autor" /> 
+                      <label for="autor">Autor</label>
+                       <input type="ano" id="anoid"  name="ank" />
+                        <label for="ano">Ano</label>
+                         <textarea placeholder="Outras informações"></textarea>
+                          <input type="submit" class="Pesquisar" onclick="Pesquisar();" value="Pesquisar" /> 
+                          
+
+                          </form> 
+                          </body>
+                           </html>
